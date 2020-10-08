@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+    app:
+      build: ./
+      volumes:
+        - ./:/usr/app
+      ports:
+        - 30001:30001
+      restart: always
+        
